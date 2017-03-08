@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SnakeGame
+Bundle-SymbolicName: edu.umkc.chaitu.snakegame;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: snakegame.Activator
+Bundle-Vendor: Chaitanya Peravalli
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Export-Package: edu.umkc.chaitu.board,
+ edu.umkc.chaitu.clock,
+ edu.umkc.chaitu.side,
+ edu.umkc.chaitu.snake

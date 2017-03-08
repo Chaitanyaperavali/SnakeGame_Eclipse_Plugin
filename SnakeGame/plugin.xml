@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="edu.umkc.chaitu.snakegame" name="SnakeGameEp" schema="schema/edu.umkc.chaitu.snakegame.exsd"/>
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            id="edu.umkc.chaitu.snakegame.actionSet"
+            label="Sample Action Set"
+            visible="true">
+         <menu
+               id="sampleMenu"
+               label="Sample &amp;Menu">
+            <separator
+                  name="sampleGroup">
+            </separator>
+         </menu>
+         <action
+               class="edu.umkc.chaitu.snakegame.actions.SnakeGameHandler"
+               icon="icons/snake.png"
+               id="edu.umkc.chaitu.snakegame.actions.SnakeGameHandler"
+               label="&amp;Sample Action"
+               menubarPath="sampleMenu/sampleGroup"
+               toolbarPath="sampleGroup"
+               tooltip="Snake Game">
+         </action>
+      </actionSet>
+   </extension>
+
+</plugin>
